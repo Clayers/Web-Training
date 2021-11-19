@@ -6,50 +6,56 @@ export default defineComponent({
         {
           label: 'Главная',
           icon: 'pi pi-home',
-          to: '/',
+          to: '/main',
           command: () => {
-            this.$router.push('/');
+            document.getElementById('main')!.scrollIntoView({ behavior: 'smooth' });
+            this.$router.push('#main');
           },
         },
         { separator: true },
         {
           label: 'О компании',
           icon: 'pi pi-book',
-          to: '/',
+          to: '/about-us',
           command: () => {
-            this.$router.push('/');
+            document.getElementById('about-us')!.scrollIntoView({ behavior: 'smooth' });
+            this.$router.push('#about-us');
           },
         },
         {
-          label: 'наши заказчики',
-          icon: 'pi pi-sign-in',
-          to: '/',
+          label: 'Наши заказчики',
+          icon: 'pi pi-users',
+          to: '/customers',
           command: () => {
-            this.$router.push('/');
+            document.getElementById('customers')!.scrollIntoView({ behavior: 'smooth' });
+            this.$router.push('#customers');
           },
         },
         {
           label: 'Работа в компании',
-          icon: 'pi pi-users',
-          to: '/',
+          icon: 'pi pi-briefcase',
+          to: '/work-in-company',
           command: () => {
-            this.$router.push('/');
+            document.getElementById('work-in-company')!.scrollIntoView({ behavior: 'smooth' });
+            this.$router.push('#work-in-company');
           },
         },
         {
           label: 'Предложения и услуги',
-          icon: 'pi pi-phone',
-          to: '/',
+          icon: 'pi pi-shopping-cart',
+          to: '/work-in-company',
           command: () => {
-            this.$router.push('/');
+            document.getElementById('work-in-company')!.scrollIntoView({ behavior: 'smooth' });
+            this.$router.push('#work-in-company');
           },
         },
         {
           label: 'Контакты',
-          icon: 'pi pi-phone',
+          icon: 'contacts',
           to: '/',
           command: () => {
-            this.$router.push('/');
+            document.getElementById('contacts')!.scrollIntoView({ behavior: 'smooth' });
+            this.$router.push('#contacts');
           },
         },
       ],
