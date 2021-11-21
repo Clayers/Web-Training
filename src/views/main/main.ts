@@ -43,10 +43,10 @@ export default defineComponent({
         {
           label: 'Предложения и услуги',
           icon: 'pi pi-shopping-cart',
-          to: '/work-in-company',
+          to: '/offers-and-services',
           command: () => {
-            document.getElementById('work-in-company')!.scrollIntoView({ behavior: 'smooth' });
-            this.$router.push('#work-in-company');
+            document.getElementById('offers-and-services')!.scrollIntoView({ behavior: 'smooth' });
+            this.$router.push('#offers-and-services');
           },
         },
         {

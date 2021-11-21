@@ -87,10 +87,40 @@
         </div>
       </div>
     </div>
+    <div id="offers-and-services" class="padingblock">
+      <div class="card pl-8 pt-4 borderblockstyle">
+        <span class="block text-6xl font-bold stylehederblock">Предложения и услуги</span>
+        <div class="row">
+          <div class="card-columns px-4 py-8 md:px-6 lg:px-6 col-sm-6" style="column-count: 2">
+            <div class="card cards" style="display: inline-block">
+              <img class="card-img cards" src="@/assets/img/galleria/1.jpg" alt="Card image" />
+            </div>
+            <div class="card cards" style="display: inline-block">
+              <img class="card-img cards" src="@/assets/img/galleria/1.jpg" alt="Card image" />
+            </div>
+            <div class="card cards" style="display: inline-block">
+              <img class="card-img cards" src="@/assets/img/galleria/1.jpg" alt="Card image" />
+            </div>
+          </div>
+          <div class="px-4 py-8 md:px-6 lg:px-6 col-sm-6">
+            <Fieldset class="p-fieldset p-component">
+              <p class="text-900 mb-3 font-bold text-2xl" align="justify">
+                <span>ООО «Балтийские Судовые Системы» предлагает свои услуги при выполнении следующих видов работ:</span>
+              </p>
+              <p class="mb-3 font-bold text-2xl" align="justify">• Трубопроводные работы</p>
+              <p class="mb-3 font-bold text-2xl" align="justify">• Корпусные работы</p>
+              <p class="mb-3 font-bold text-2xl" align="justify">• Монтажные работы</p>
+              <p class="mb-3 font-bold text-2xl" align="justify">• Электросварочные работы</p>
+              <p class="mb-3 font-bold text-2xl" align="justify">• Достроечные работы</p>
+            </Fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="contacts" class="padingblock pb-4">
       <div class="card pl-8 pt-4 borderblockstyle">
         <span class="block text-6xl font-bold stylehederblock">Контакты</span>
-        <div class="card-columns px-4 py-8 md:px-6 lg:px-6">
+        <div class="card-columns px-4 py-8 md:px-6 lg:px-6" style="column-count: 3">
           <div class="card cards" style="display: inline-block">
             <div class="card-body">
               <h5 class="card-title">Контактный телефон в г. Санкт-Петербург</h5>
@@ -153,11 +183,6 @@
       </div>
     </div>
   </div>
-  <div class="padingblock pt-8">
-    <div class="card pl-8 pt-8 borderblockstyle">
-      <p></p>
-    </div>
-  </div>
 </template>
 
 <script lang="ts">
@@ -166,22 +191,16 @@ export default Index;
 </script>
 
 <style lang="scss" scoped>
-.card-columns {
-  column-count: 3;
-}
 .card {
-  display: inline-block;
   margin-bottom: 1.25rem;
 }
 .card-columns .card {
-  display: inline-block;
   width: 100%;
 }
 .cards {
   border-radius: 32px;
   border: none;
   box-shadow: 0 10px 10px 4px rgba(167, 165, 165, 0.3);
-  flex-direction: column !important;
 }
 .divpaddingcards {
   padding-left: 10px;
