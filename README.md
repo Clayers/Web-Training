@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # Web-Training
-=======
+
 # vuetrain
 
 ## Project setup
